@@ -1,0 +1,391 @@
+/* Profile Modal Styles */
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, var(--secondary), var(--dark));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-size: 2.5rem;
+    color: white;
+    border: 4px solid white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.profile-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.status-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.status-indicator.online {
+    background-color: var(--success);
+}
+
+.status-indicator.offline {
+    background-color: #6c757d;
+}
+
+.profile-info {
+    margin-bottom: 25px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 12px;
+    background-color: var(--light);
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.info-item:hover {
+    background-color: #e8f4f8;
+}
+
+.info-item i {
+    width: 20px;
+    margin-right: 12px;
+    color: var(--secondary);
+    font-size: 1.1rem;
+}
+
+.profile-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 20px 15px;
+    background: linear-gradient(135deg, var(--light), #ffffff);
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stat-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stat-number {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--dark);
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Emergency Contacts Section */
+.emergency-contacts-section {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: var(--light);
+    border-radius: 10px;
+    border-left: 4px solid var(--secondary);
+}
+
+.emergency-contacts-section h3 {
+    margin-bottom: 15px;
+    color: var(--dark);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.emergency-contacts-section h3 i {
+    color: var(--secondary);
+}
+
+.contacts-list {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info strong {
+    display: block;
+    color: var(--dark);
+    margin-bottom: 2px;
+}
+
+.contact-info span {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.contact-info small {
+    color: #888;
+    font-size: 0.8rem;
+}
+
+.btn-remove-contact {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-remove-contact:hover {
+    background-color: #f8d7da;
+}
+
+.no-contacts {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+}
+
+.no-contacts i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #adb5bd;
+}
+
+.no-contacts p {
+    margin-bottom: 5px;
+}
+
+/* Profile Actions */
+.profile-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.profile-actions .btn {
+    padding: 12px;
+    font-size: 0.9rem;
+}
+
+/* Edit Profile Modal */
+#editProfileModal .modal-content {
+    max-width: 500px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.form-actions .btn {
+    flex: 1;
+}
+
+/* Manage Contacts Modal */
+#manageContactsModal .modal-content {
+    max-width: 600px;
+    max-height: 80vh;
+}
+
+.contacts-management {
+    margin-bottom: 20px;
+}
+
+.current-contacts {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: var(--light);
+    border-radius: 8px;
+}
+
+.managed-contact-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: white;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.contact-details {
+    flex: 1;
+}
+
+.contact-details strong {
+    display: block;
+    color: var(--dark);
+    margin-bottom: 2px;
+}
+
+.contact-details span {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.contact-details small {
+    color: #888;
+    font-size: 0.8rem;
+}
+
+.btn-remove-managed-contact {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-remove-managed-contact:hover {
+    background-color: #f8d7da;
+}
+
+.add-contact-form {
+    border-top: 2px solid #e9ecef;
+    padding-top: 20px;
+}
+
+.add-contact-form h4 {
+    margin-bottom: 15px;
+    color: var(--dark);
+}
+
+.modal-actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Form Controls */
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 2px rgba(69, 123, 157, 0.2);
+}
+
+.form-control:disabled {
+    background-color: #f5f5f5;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.form-group small {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+    font-size: 0.85rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-stats {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .profile-actions {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-item {
+        padding: 15px 10px;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem;
+    }
+    
+    .profile-avatar {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    #manageContactsModal .modal-content,
+    #editProfileModal .modal-content {
+        margin: 10px;
+        padding: 20px;
+    }
+    
+    .profile-info {
+        margin-bottom: 20px;
+    }
+    
+    .info-item {
+        padding: 10px;
+    }
+    
+    .emergency-contacts-section {
+        padding: 15px;
+    }
+}
